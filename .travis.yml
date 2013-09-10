@@ -6,6 +6,5 @@ language: python
 env:
  - secure: "drTn+4LjM5Fj3CVrsKJX3Owt49+ntFfV8eMo8cfvbZURCkj1xj3gMzOivPPz9ecn0jZ5hrjr9N45qNC8HgqYpc6x1rCwz9ASI+TSutrf1OTcWcPBcBWFHseqtNhVBe7ZNnxroUFe81tff5BTbfbhjX/uE5jIAZnoY/dq7zrt6SY="
 script: 
- - svn co --help
- - secure: "gJwEEW8WdZqAYodh3H6LJWR05o+6gD7KlcDqVbnuapXF0tNqAEhRnrtgYj9XvbEApQhzAbYOqAnWZ5wWqzTy4ngxEYDUjbJm75EYDgMoGowyvboKaBQBkahYZcgCQgED9mYLGykjnuvJ+eryBWz/WgxSWn1mVhhJZk+XIrVf6Jw="
+ -  echo "store-plaintext-passwords=yes" >> /home/travis/.subversion/servers
  - svn co --username gijs --password ${PASSWORD} http://svn.transientskp.org/data/unittests/tkp_lib/ data
