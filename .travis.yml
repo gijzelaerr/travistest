@@ -12,3 +12,5 @@ script:
  - dpkg -l | grep pyrap
  - python -c "import pyrap; print pyrap.__file__"
  - python -c "import pyrap.measures; print pyrap.measures.__file__"
+ - ls /usr/lib/python2.7/dist-packages/pyrap
+ - ls /usr/lib/python2.7/dist-packages
